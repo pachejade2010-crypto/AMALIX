@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>boton</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<body>
+  <header>
+    <div>
+       <img src="images/image copy 44.png" alt="Logo de la página" class="logo">
+    <h1>AMALIX</h1>
+    <p>AMOR PARA TUS RIZOS Y ESTILO PARA TU VIDA</p>
+    <nav></nav>
+
+    </div>
+
+
+
+    <div>
+      <nav class="menu"></nav>
+    
+    
+
+
+
+
+<ul>
+  <div style="position: relative; display: inline-block;">
+      <input type="text" id="buscador" placeholder="Buscar producto..." onkeyup="filtrarbusqueda()" style="padding: 12px; padding-right: 40px; font-size: 16px; width: 320px; border: 2px solid #E8D6C3; border-radius: 5px;">
+      <span style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 18px; pointer-events: none;">🔍</span>
+    </div>
+
+        <a class="btn" href="servicios.html">servicios</a>
+        <a class="btn" href="productos.html">Productos</a>
+        <a class="btn" href="favorito.html">favorito</a>
+        <a class="btn" href="#" onclick="toggleCarrito(); return false;">🛒 Carrito (<span id="carrito-cantidad">0</span>)</a>
+        
+<a href="cuenta.html" class="cuenta">
+    <img src="images/image copy 76.png" alt="iconode cuenta">
+</a>
+
+
+
+    </li>
+</ul>
+    </nav>
+  </header>
+</div:
+
+
+
+
+
+
+
+<section>
+  <h2>OFERTAS</h2>
+  <div class="carrusel-wrapper">
+    <button class="carrusel-btn carrusel-btn-prev" onclick="moverCarruselHacia('izq')">❮</button>    
+    <div class="carrusel">
+      <div class="carrusel-container" id="carrusel">
+        <img src="images/image copy 2.png" alt="Producto">
+        <img src="images/descarga (2).jpg" alt="Producto"> 
+        <img src="images/image copy 16.png" alt="Producto">
+        <img src="images/image copy 62.png" alt="Producto">
+        <img src="images/image copy 63.png" alt="Producto">
+        <img src="images/image copy 64.png" alt="Producto">
+        <img src="images/image copy 65.png" alt="Producto">
+        <img src="images/image copy 66.png" alt="Producto">
+        <img src="images/image copy 67.png" alt="Producto">
+        <img src="images/image copy 68.png" alt="Producto">
+      </div>
+    </div>
+    <button class="carrusel-btn carrusel-btn-next" onclick="moverCarruselHacia('der')">❯</button>
+  </div>
+</section>
+
+  <main>
+    
+    <section>
+      <div>
+      <h2>Para ti</h2>
+      </div>
+
+      <div class="contenedor-productos">
+      <div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 5.png">
+  </div>
+  <p class="nombre">combo de 2</p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('combo de 2', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 80.png">
+  </div>
+  <p class="nombre">crema de peinar 3en1 de cacao</p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('crema de peoinar 3en1 de cacao', 25)">
+    Agregar al carrito
+  </button>
+</div>
+      
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 85.png">
+  </div>
+  <p class="nombre">spray fijador </p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('spray fijador ', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 86.png">
+  </div>
+  <p class="nombre">tratamiento intenso anti-caida</p>
+  <p class="precio">$450</p>
+  <button onclick="agregarAlCarrito('tratamiento intenso anti-caida', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 87.png">
+  </div>
+  <p class="nombre">kit de pree-po</p>
+  <p class="precio">$500</p>
+  <button onclick="agregarAlCarrito('kit de pree-po', 25)">
+    Agregar al carrito
+  </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+     <onclick="seleccionar(this)">
+
+
+
+
+
+
+
+
+     <onclick="seleccionar(this)">
+         
+        <div>
+    <section class="media">
+      <h2>Nuestra oferta</h2>
+      <video controls src="video/Afro Love _ ¡Nueva Crema Color Nutritiva!.mp4" width="600">
+        Tu navegador no soporta video.
+      </video>
+    </section>
+        </div>
+  
+
+<div id="modal-carrito" class="modal-carrito oculto">
+  <div class="carrito-contenido">
+    <div class="carrito-header">
+      <h2>🛒 Mi Carrito</h2>
+      <button onclick="toggleCarrito()" class="cerrar-carrito" style="font-size: 28px; background: none; border: none; cursor: pointer; padding: 0; color: #333;">&times;</button>
+    </div>
+    <div id="carrito-items" class="carrito-items">
+      <p style="text-align: center; color: #999;">Tu carrito está vacío</p>
+    </div>
+    <div class="carrito-footer">
+      <div class="carrito-total">
+        <strong>Total: $<span id="carrito-total">0.00</span></strong>
+      </div>
+      <button class="btn-comprar" onclick="comprar()">Comprar</button>
+      <button class="btn-limpiar" onclick="limpiarCarrito()">Limpiar Carrito</button>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <a href="https://www.instagram.com/jade.kitt/" target="_blank" class="btn-instagram"> 
+    <img src="images/image copy 71.png" alt="icono de instagram">
+  </a>
+
+  <a href="https://maps.app.goo.gl/Sx9XVdaRaf5bHvN67" target="_blank" class="btn-maps">
+    <img src="images/image copy 73.png" alt="icono de ubicacion">
+  </a>
+
+  <a href="mailton:pachejade2010@gmail.com" target="_blank" class="btn-email">
+    <img src="images/image copy 75.png" alt="icono de correo">
+  </a>
+
+
+
+<h2>cuidando tus rizos con amor</h2>
+
+<a href="#">inicio</a>
+<a href="#">productos</a>
+<a href="#">contacto</a>
+
+<p>Instagram: AMALIX</p>
+<p>whatsapp: +1 829-352-7773</p>
+<p>© 2026 AMALIX</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>
+

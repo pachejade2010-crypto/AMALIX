@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PRODUCTOS</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="productos-style.css">
+</head>
+<body>
+
+<h1>PRODUCTOS</h1>
+
+<header>
+  <nav class="menu">
+    <ul>
+      <a class="btn" href="index.html">Inicio</a>
+      <a class="btn" href="#" onclick="toggleCarrito(); return false;">🛒 Carrito (<span id="carrito-cantidad">0</span>)</a>
+    </ul>
+  </nav>
+</header>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/descarga (2).jpg">
+  </div>
+  <p class="nombre">linea de pelo</p>
+  <p class="precio">$1,200</p>
+  <button onclick="agregarAlCarrito('linea de pelo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy.png">
+  </div>
+  <p class="nombre">acondicionador</p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 15.png">
+  </div>
+  <p class="nombre">gel curly</p>
+  <p class="precio">$150</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 5.png">
+  </div>
+  <p class="nombre">combo de 2</p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 11.png">
+  </div>
+  <p class="nombre">shampoo detox</p>
+  <p class="precio">$150</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 16.png">
+  </div>
+  <p class="nombre">mascarrilla nutritiva</p>
+  <p class="precio">$295</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 42.png">
+  </div>
+  <p class="nombre">activador de rizos</p>
+  <p class="precio">$400</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 63.png">
+  </div>
+  <p class="nombre">shampoo hidratanate de melocoton</p>
+  <p class="precio">$200</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 52.png">
+  </div>
+  <p class="nombre">leaven-in</p>
+  <p class="precio">$175</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 54.png">
+  </div>
+  <p class="nombre">gel curly</p>
+  <p class="precio">$150</p>
+  <button onclick="agregarAlCarrito('Top deportivo', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 60.png">
+  </div>
+  <p class="nombre">aceite hidratante</p>
+  <p class="precio">$250</p>
+  <button onclick="agregarAlCarrito('aceite hidratante', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 79.png">
+  </div>
+  <p class="nombre">gotero para el crecimiento</p>
+  <p class="precio">$450</p>
+  <button onclick="agregarAlCarrito('gotero para el crecimiento', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 80.png">
+  </div>
+  <p class="nombre">crema de peinar 3en1</p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('crema de peinar 3en1', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 81.png">
+  </div>
+  <p class="nombre">crema de peinar</p>
+  <p class="precio">$300</p>
+  <button onclick="agregarAlCarrito('crema de peinar', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+<div class="producto">
+  <div class="imagen-container">
+    <span class="favorito" onclick="toggleFavorito(this)">♡</span>
+    <img src="images/image copy 82.png">
+  </div>
+  <p class="nombre">aceite reparador </p>
+  <p class="precio">$150</p>
+  <button onclick="agregarAlCarrito('aceite reparador ', 25)">
+    Agregar al carrito
+  </button>
+</div>
+
+
+
+
+
+
+<center>
+<div class="galeria">
+</div>
+</center>
+
+<!-- Modal del Carrito -->
+<div id="modal-carrito" class="modal-carrito oculto">
+  <div class="carrito-contenido">
+    <div class="carrito-header">
+      <h2>🛒 Mi Carrito</h2>
+      <button onclick="toggleCarrito()" class="cerrar-carrito" style="font-size: 28px; background: none; border: none; cursor: pointer; padding: 0; color: #333;">&times;</button>
+    </div>
+    <div id="carrito-items" class="carrito-items">
+      <p style="text-align: center; color: #999;">Tu carrito está vacío</p>
+    </div>
+    <div class="carrito-footer">
+      <div class="carrito-total">
+        <strong>Total: $<span id="carrito-total">0.00</span></strong>
+      </div>
+      <button class="btn-comprar" onclick="comprar()">Comprar</button>
+      <button class="btn-limpiar" onclick="limpiarCarrito()">Limpiar Carrito</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="producto.js"></script>
+
+
+</body>

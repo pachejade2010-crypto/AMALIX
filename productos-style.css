@@ -1,0 +1,49 @@
+/* Estilos específicos para productos.html */
+
+/* Header y menú sin fondo marrón */
+header {
+  background: transparent !important;
+  padding: 10px 0 !important;
+}
+
+.menu {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Productos grid */
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+body > h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-size: 34px;
+}
+
+body > header {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.producto {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.producto:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
